@@ -1,0 +1,15 @@
+{
+  "name": "poa-cluster-tools",
+  "version": "0.0.1",
+  "author": "Konstantin Kudryavtsev",
+  "description": "Proof of Authority cluster configuration tools",
+  "private": "false",
+  "license": "GPLv3",
+  "repository": {
+  },
+  "bin": {
+  },
+  "dependencies": {
+    
+  }
+}
