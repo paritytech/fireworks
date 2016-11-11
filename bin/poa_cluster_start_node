@@ -1,4 +1,8 @@
 #/bin/bash
 
 mkdir -p $HOME/.parity/keys
-node lib/start-node.js "$@"
+node lib/configure-node.js "$@"
+
+pm2 start --name parity ~/run-parity.sh
+pm2 logs
+
