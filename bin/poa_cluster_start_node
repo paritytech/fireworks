@@ -1,0 +1,4 @@
+#/bin/bash
+
+mkdir -p $HOME/.parity/keys
+node lib/start-node.js "$@"
