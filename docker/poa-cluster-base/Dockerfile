@@ -1,15 +1,15 @@
-FROM ubuntu:16.04
+FROM ubuntu:xenial
 
-RUN apt-get update
-RUN apt-get install curl git jq
+RUN apt-get update && apt-get install -y curl git jq apt-utils build-essential python
 
-RUN curl -sL https://deb.nodesource.com/setup_6.x | -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt-get update && apt-get install nodejs -y
 
 RUN npm install -g pm2 
 
 RUN git clone https://github.com/ethcore/poa-cluster-tools.git
-RUN cd poa-cluster-tools
-RUN npm install -g
+ENV NODE_PATH=/usr/lib/node_modules
+RUN cd poa-cluster-tools && npm install && npm install -g
+
 
 COPY run-parity.sh $HOME/

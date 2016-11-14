@@ -1,8 +1,11 @@
 #/bin/bash
 
 mkdir -p $HOME/.parity/keys
-node lib/configure-node.js "$@"
+poa_cluster_tools configure-node "$@"
 
-pm2 start --name parity ~/run-parity.sh
-pm2 logs
+if [ $? -eq 0 ]; then
+	pm2 start --name parity ~/run-parity.sh
+	pm2 logs
+fi
+
 
