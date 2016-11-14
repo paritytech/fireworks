@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install nodejs -y
 #RUN npm config set registry http://registry.npmjs.org/
 RUN npm install -g pm2 
 
-RUN DUMMY=1 git clone https://github.com/ethcore/poa-cluster-tools.git
+RUN git clone https://github.com/ethcore/poa-cluster-tools.git
 RUN cd poa-cluster-tools && npm install && npm install -g
 
 
