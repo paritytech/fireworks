@@ -18,6 +18,7 @@
     "ejs": "^2.5.2",
     "keythereum": "^0.3.0",
     "lodash": "^4.16.6",
-    "password-generator": "^2.0.2"
+    "password-generator": "^2.0.2",
+    "request": "^2.78.0"
   }
 }
