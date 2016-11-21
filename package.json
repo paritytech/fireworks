@@ -7,16 +7,13 @@
   "license": "GPLv3",
   "repository": {},
   "bin": {
-    "poa_cluster_tools": "bin/poa_cluster_tools",
-    "poa_cluster_init": "bin/poa_cluster_init",
-    "poa_cluster_start_node": "bin/poa_cluster_start_node"
+    "poa_cluster_tools": "bin/poa_cluster_tools"
   },
   "dependencies": {
     "async": "^2.1.2",
     "command-line-args": "^3.0.3",
     "command-line-usage": "^3.0.7",
     "ejs": "^2.5.2",
-    "keythereum": "^0.3.0",
     "lodash": "^4.16.6",
     "password-generator": "^2.0.2",
     "request": "^2.78.0"

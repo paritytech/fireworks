@@ -1,3 +1,0 @@
-#!/bin/bash
-
-poa_cluster_tools init "$@"
