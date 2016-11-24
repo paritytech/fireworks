@@ -1,3 +1,4 @@
-# Proof of Authority cluster configuration tools
+# Fireworks
+## Parity cluster configuration tools
 
 
