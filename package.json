@@ -8,7 +8,8 @@
   "repository": {},
   "bin": {
     "poa_cluster_tools": "bin/fireworks",
-    "fireworks": "bin/fireworks"
+    "fireworks": "bin/fireworks",
+    "fw": "bin/fireworks"
   },
   "dependencies": {
     "async": "^2.1.2",
