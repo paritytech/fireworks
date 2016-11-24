@@ -7,7 +7,8 @@
   "license": "GPLv3",
   "repository": {},
   "bin": {
-    "poa_cluster_tools": "bin/poa_cluster_tools"
+    "poa_cluster_tools": "bin/fireworks",
+    "fireworks": "bin/fireworks"
   },
   "dependencies": {
     "async": "^2.1.2",
