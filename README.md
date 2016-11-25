@@ -1,4 +1,6 @@
 # Fireworks
-## Parity cluster configuration tools
+### Parity cluster configuration tools
+
+Work in progress. Documentation coming.
 
 
