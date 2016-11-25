@@ -8,6 +8,7 @@ RUN curl -o parity.deb $PARITY_DEB_URL && \
     dpkg -i parity.deb && \
     rm parity.deb
 
+EXPOSE 8080 8545 8180
 
 
 
