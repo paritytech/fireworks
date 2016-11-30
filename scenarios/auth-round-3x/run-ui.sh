@@ -6,6 +6,11 @@ SHARED_DIR=/home/shared
 AUTH_NAMES="poa0 poa1 poa2"
 CHAIN_URL=https://raw.githubusercontent.com/ethcore/poa-cluster-tools/master/scenarios/auth-round-3x/chain.json
 
+declare -A ADDRESS
+ADDRESS[poa0]=0x0073e5ffafe3a2974a407b04b730278cf5a6a36c
+ADDRESS[poa1]=0x009c52a373df8621aa3712dccdc1896a2108aba0
+ADDRESS[poa2]=0x0066c20558176bcbc8dcdabb7b7093e4b1dd4abe
+
 function wait_for_state(){
   until [  $(docker inspect -f {{.Status.State}} $1) == $2 ]; do
     $3
@@ -30,6 +35,7 @@ do
          -p $dapps_port:8080 \
          jesuscript/parity-master /bin/bash -c "\
          curl -o /root/chain.json $CHAIN_URL && \
+         mkdir -p /root/.parity/signer/ && \
          parity \
          --chain /root/chain.json \
          --jsonrpc-interface all \
